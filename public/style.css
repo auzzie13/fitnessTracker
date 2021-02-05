@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #868b63;
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -25,12 +25,19 @@ nav {
   font-size: 1.2rem;
 }
 
-a,
+nav a {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 a:hover,
 a:active,
 a:visited {
-  text-decoration: none;
-  color: inherit;
+  background-color: #d1d3c0;
+  color: #ffffff;
 }
 
 header {

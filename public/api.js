@@ -16,7 +16,7 @@ const API = {
 
     const json = await res.json();
 
-    return json;
+    return json;``
   },
   async createWorkout() {
     const res = await fetch("/api/workouts", {
