@@ -1,9 +1,10 @@
+require('dotenv').config();
+
 let mongoose = require("mongoose");
 let db = require("../models");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://fitness-tracker:fitness-tracker@cluster0.zmiiz.mongodb.net/workout?retryWrites=true&w=majority", {
-  useNewUrlParser: true,
-  useFindAndModify: false
+  useNewUrlParser: true
 });
 
 let workoutSeed = [
@@ -126,8 +127,8 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-1),
     exercises: [
       {
-        type: "resistance",
-        name: "Bench",
+        type: "cardio",
+        name: "Running",
         duration: 30,
         distance: 2
       }
